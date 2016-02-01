@@ -1,0 +1,29 @@
+Source: ruby-fog-dynect
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Sagar Ippalpalli <>
+Build-Depends: debhelper (>= 9~),
+               gem2deb,
+               ruby-fog-core,
+               ruby-fog-json,
+               ruby-fog-xml
+Standards-Version: 3.9.6
+Vcs-Git: https://anonscm.debian.org/git/pkg-ruby-extras/ruby-fog-dynect.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-fog-dynect.git
+Homepage: http://github.com/fog/fog-dynect
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-fog-dynect
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ruby-fog-core,
+         ruby-fog-json,
+         ruby-fog-xml,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Module for the 'fog' gem to support Dynect DNS.
+ This library can be used as a module for `fog` or as
+ standalone provider to use Dynect DNS in applications.
