@@ -1,4 +1,4 @@
-ruby-fog-dynect (0.0.2-1) UNRELEASED; urgency=medium
+ruby-fog-dynect (0.0.2-1) unstable; urgency=medium
 
   * Initial release (Closes: #810831)
 
